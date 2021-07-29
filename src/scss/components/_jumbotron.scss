@@ -89,3 +89,35 @@
         }
     }
 }
+@include responsive(400px) {
+    .jumbotron {
+        &__left {
+            &__caption {
+                font-size: 2.5 * $size;
+                margin-top: 2 * $size;
+            }
+            &__subcaption {
+                font-size: 1.7 * $size;
+                margin-top: 1 * $size;
+            }
+            &__quote {
+                margin-top: 0.5 * $size;
+                font-size: 1.5 * $size;
+            }
+        }
+        &__right {
+            &--mobile {
+                margin-top: 8vh;
+                transform: translateX(15%);
+                img {
+                    width: 400px;
+                }
+                .rect {
+                    top: -10%;
+                    left: -8%;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}

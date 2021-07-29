@@ -82,3 +82,14 @@
         }
     }
 }
+@include responsive() {
+    .slide {
+        &__name {
+            font-size: 2.5 * $size;
+            margin-bottom: $size;
+        }
+        &__description {
+            font-size: 1.8 * $size;
+        }
+    }
+}

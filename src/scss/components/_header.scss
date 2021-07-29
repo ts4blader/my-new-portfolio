@@ -57,3 +57,22 @@
         }
     }
 }
+@include responsive(400px) {
+    .header {
+        &__logo {
+            .button {
+                @include size(5 * $size);
+                font-size: 20px;
+            }
+        }
+        &__menu {
+            img {
+                width: 20px;
+                margin-right: 2 * $size;
+            }
+        }
+        &__community {
+            display: none;
+        }
+    }
+}

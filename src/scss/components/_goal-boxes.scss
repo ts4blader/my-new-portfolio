@@ -70,3 +70,24 @@
         }
     }
 }
+@include responsive() {
+    .goal-boxes {
+        .content-box {
+            .rect {
+                height: 150%;
+            }
+        }
+        .content-box:nth-child(1) {
+            margin-top: 10vh;
+            font-size: 2.5 * $size;
+            margin-bottom: 12 * $size;
+            .rect {
+                width: 60%;
+                height: 180%;
+            }
+        }
+        .content-box:nth-child(2) {
+            font-size: 2 * $size;
+        }
+    }
+}

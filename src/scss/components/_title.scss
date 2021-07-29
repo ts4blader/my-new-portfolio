@@ -30,3 +30,12 @@
         margin-top: 15vh;
     }
 }
+@include responsive(400px) {
+    .title {
+        font-size: 3 * $size;
+        margin-top: 10vh;
+        &__text {
+            text-shadow: 2px 4px rgba($primary-color, 0.25);
+        }
+    }
+}

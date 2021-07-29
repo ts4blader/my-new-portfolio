@@ -77,3 +77,20 @@
         }
     }
 }
+@include responsive(400px) {
+    .nav {
+        padding: 2 * $size;
+        .button {
+            @include size(5 * $size);
+        }
+        &__community {
+            margin-top: 1 * $size;
+        }
+        &__close {
+            margin-bottom: 1 * $size;
+            img {
+                @include size(3 * $size);
+            }
+        }
+    }
+}

@@ -55,3 +55,10 @@
         }
     }
 }
+@include responsive() {
+    .carousel {
+        #swiper-pagination {
+            margin-top: 2 * $size;
+        }
+    }
+}

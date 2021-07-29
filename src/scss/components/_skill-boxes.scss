@@ -81,3 +81,22 @@
         }
     }
 }
+@include responsive() {
+    .skill-boxes {
+        &__item {
+            margin: 2.5 * $size auto;
+            .content-box {
+                h4 {
+                    font-size: 2.5 * $size;
+                }
+                li {
+                    font-size: 1.8 * $size;
+                }
+                .rect {
+                    height: 130%;
+                    left: -(2 * $size);
+                }
+            }
+        }
+    }
+}
