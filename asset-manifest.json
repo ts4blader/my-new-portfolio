@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/my-new-portfolio/static/css/main.a24076bb.chunk.css",
+    "main.js": "/my-new-portfolio/static/js/main.a3a8616c.chunk.js",
+    "main.js.map": "/my-new-portfolio/static/js/main.a3a8616c.chunk.js.map",
+    "runtime-main.js": "/my-new-portfolio/static/js/runtime-main.05f6dbd9.js",
+    "runtime-main.js.map": "/my-new-portfolio/static/js/runtime-main.05f6dbd9.js.map",
+    "static/css/2.0fb944cf.chunk.css": "/my-new-portfolio/static/css/2.0fb944cf.chunk.css",
+    "static/js/2.94b15321.chunk.js": "/my-new-portfolio/static/js/2.94b15321.chunk.js",
+    "static/js/2.94b15321.chunk.js.map": "/my-new-portfolio/static/js/2.94b15321.chunk.js.map",
+    "static/js/3.7cda74db.chunk.js": "/my-new-portfolio/static/js/3.7cda74db.chunk.js",
+    "static/js/3.7cda74db.chunk.js.map": "/my-new-portfolio/static/js/3.7cda74db.chunk.js.map",
+    "index.html": "/my-new-portfolio/index.html",
+    "static/css/2.0fb944cf.chunk.css.map": "/my-new-portfolio/static/css/2.0fb944cf.chunk.css.map",
+    "static/css/main.a24076bb.chunk.css.map": "/my-new-portfolio/static/css/main.a24076bb.chunk.css.map",
+    "static/js/2.94b15321.chunk.js.LICENSE.txt": "/my-new-portfolio/static/js/2.94b15321.chunk.js.LICENSE.txt",
+    "static/media/animation-collection.png": "/my-new-portfolio/static/media/animation-collection.302fd1e0.png",
+    "static/media/create-color-palette.png": "/my-new-portfolio/static/media/create-color-palette.a71685dc.png",
+    "static/media/creativity.png": "/my-new-portfolio/static/media/creativity.8b0cafc8.png",
+    "static/media/draw-collection.png": "/my-new-portfolio/static/media/draw-collection.1654d53e.png",
+    "static/media/facebook.png": "/my-new-portfolio/static/media/facebook.4f037d96.png",
+    "static/media/gymidle.png": "/my-new-portfolio/static/media/gymidle.156f9aff.png",
+    "static/media/instagram.png": "/my-new-portfolio/static/media/instagram.44384132.png",
+    "static/media/longhairguy.jpeg": "/my-new-portfolio/static/media/longhairguy.a4a68070.jpeg",
+    "static/media/longhairguy.png": "/my-new-portfolio/static/media/longhairguy.f16ca2cd.png",
+    "static/media/longhairguy4x3.png": "/my-new-portfolio/static/media/longhairguy4x3.0a64f60f.png",
+    "static/media/my-to-do-list.png": "/my-new-portfolio/static/media/my-to-do-list.8f4c9552.png",
+    "static/media/page-collection.png": "/my-new-portfolio/static/media/page-collection.85256678.png",
+    "static/media/phoneidle.png": "/my-new-portfolio/static/media/phoneidle.f831a2c1.png",
+    "static/media/poor-portfolio.png": "/my-new-portfolio/static/media/poor-portfolio.54aa1d8d.png",
+    "static/media/visual-animation.png": "/my-new-portfolio/static/media/visual-animation.15e95f54.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.05f6dbd9.js",
+    "static/css/2.0fb944cf.chunk.css",
+    "static/js/2.94b15321.chunk.js",
+    "static/css/main.a24076bb.chunk.css",
+    "static/js/main.a3a8616c.chunk.js"
+  ]
+}
