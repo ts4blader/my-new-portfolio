@@ -1,0 +1,32 @@
+.title {
+    font-size: 7 * $size;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: absolute;
+    text-align: center;
+    top: 8 * $size;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &__text {
+        color: $text-color;
+        text-shadow: $size $size * 0.8 rgba($primary-color, 0.25);
+    }
+}
+@include responsive(1600px) {
+    $size: $size-md;
+    .title {
+        font-size: 8 * $size;
+        top: 10 * $size;
+        &__text {
+            text-shadow: $size $size * 0.8 rgba($primary-color, 0.25);
+        }
+    }
+}
+@include responsive() {
+    .title {
+        font-size: 4 * $size;
+        position: unset;
+        transform: translate(0, 0);
+        margin-top: 15vh;
+    }
+}

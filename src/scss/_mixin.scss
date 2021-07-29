@@ -1,0 +1,57 @@
+// ====== Function =========
+
+@mixin flex($justify: center, $direction: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+}
+
+@mixin absoluteCenter($pos: "both") {
+    position: absolute;
+    @if $pos == "both" {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @if $pos == "hor" {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @if $pos == "ver" {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin centerContainer($width: 80%, $gap: 0) {
+    width: $width;
+    margin: $gap auto;
+}
+@mixin animation($delay: 0) {
+    transition-delay: $delay;
+    transition: all 300ms $ease;
+}
+
+//media controls
+@mixin responsive($break-point: $break-point) {
+    @media (max-width: $break-point) {
+        @content;
+    }
+}
+
+//function class
+.row {
+    @include flex(center, row);
+    @include responsive($break-point) {
+        flex-direction: column;
+    }
+    .col {
+        flex: 1;
+    }
+}

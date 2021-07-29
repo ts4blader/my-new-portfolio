@@ -1,0 +1,59 @@
+.footer {
+    width: 100%;
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    bottom: 6.5 * $size;
+    color: #969696;
+    font-size: 3 * $size;
+    font-style: italic;
+    .container {
+        @include flex(space-between, row);
+    }
+    &__actor {
+        font-weight: 600;
+        &::before {
+            content: "#";
+        }
+    }
+    &__social {
+        @include flex(center, row);
+        .text {
+            margin-right: 1vw;
+        }
+        .social-link {
+            width: 5 * $size;
+            margin: 0 3 * $size;
+        }
+    }
+}
+@include responsive(1600px) {
+    .footer {
+        $size: $size-md;
+        bottom: 6.5 * $size;
+        font-size: 3 * $size;
+        &__social {
+            .social-link {
+                width: 5 * $size;
+                margin: 0 1.5 * $size;
+            }
+        }
+    }
+}
+@include responsive() {
+    .footer {
+        bottom: 3 * $size;
+        &__actor {
+            font-size: $size;
+        }
+        &__social {
+            p {
+                display: none;
+            }
+            .social-link {
+                width: 2.5 * $size;
+                margin: 0 0.7 * $size;
+            }
+        }
+    }
+}

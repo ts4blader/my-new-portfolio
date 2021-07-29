@@ -1,0 +1,84 @@
+.swiper-slide {
+    @include flex(center, column);
+}
+.slide {
+    text-align: center;
+    &__preview {
+        margin-bottom: 5 * $size;
+        a {
+            width: 75 * $size;
+            position: relative;
+            transform: translate(5%, 5%);
+            opacity: 1;
+            &:hover {
+                &::after {
+                    top: -15%;
+                    left: -15%;
+                }
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: -10%;
+                left: -10%;
+                opacity: 1;
+                z-index: -1;
+                border: 3px solid $primary-color;
+                transition: all 300ms ease;
+            }
+        }
+    }
+    &__name {
+        font-weight: 600;
+        text-transform: capitalize;
+        font-size: 8 * $size;
+        margin-bottom: 2 * $size;
+    }
+    &__description {
+        color: $text-color;
+        font-size: 3 * $size;
+        font-weight: 300;
+        &::before {
+            content: "@";
+        }
+    }
+}
+@include responsive(1600px) {
+    $size: $size-md;
+    .slide {
+        &__preview {
+            margin-bottom: 5 * $size;
+            a {
+                width: 75 * $size;
+            }
+        }
+        &__name {
+            font-size: 8 * $size;
+            margin-bottom: 2 * $size;
+        }
+        &__description {
+            font-size: 3 * $size;
+        }
+    }
+}
+@include responsive() {
+    .slide {
+        &__preview {
+            a {
+                width: 100%;
+                transform: unset;
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        &__name {
+            font-size: 4 * $size;
+        }
+        &__description {
+            font-size: 2 * $size;
+        }
+    }
+}

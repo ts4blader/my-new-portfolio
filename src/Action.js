@@ -1,0 +1,7 @@
+const ACTION = {
+  OPEN_NAV: "OPEN_NAV",
+  CLOSE_NAV: "CLOSE_NAV",
+  SHOW_OVERLAY: "SHOW_OVERLAY",
+  HIDE_OVERLAY: "HIDE_OVERLAY",
+};
+export default ACTION;

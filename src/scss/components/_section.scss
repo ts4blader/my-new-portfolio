@@ -1,0 +1,25 @@
+.main {
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.section {
+    scroll-snap-align: start;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    .container {
+        position: relative;
+        height: 100%;
+        padding: 0 10%;
+    }
+}
+// @include responsive() {
+//     .section {
+//         .container {
+//             padding: 0;
+//         }
+//     }
+// }

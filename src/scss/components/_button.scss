@@ -1,0 +1,41 @@
+.button {
+    display: flex;
+    text-align: center;
+    position: relative;
+    @include size(9 * $size);
+    padding: 1.5 * $size;
+    background: $primary-color;
+    &.active {
+        &::after {
+            top: -20%;
+            left: -20%;
+            opacity: 1;
+        }
+    }
+    &:hover {
+        &::after {
+            top: -20%;
+            left: -20%;
+            opacity: 1;
+        }
+    }
+    &::after {
+        content: "";
+        @include size(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        border: 2px solid $black-color;
+        transition: all 200ms $ease;
+        z-index: -1;
+    }
+}
+
+@include responsive(1600px) {
+    $size: $size-md;
+    .button {
+        @include size(9 * $size);
+        padding: 1.5 * $size;
+    }
+}

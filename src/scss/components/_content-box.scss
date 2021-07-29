@@ -1,0 +1,19 @@
+.content-box {
+    width: max-content;
+    position: relative;
+    .rect {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -(4 * $size);
+        width: 60%;
+        height: 200%;
+        border: 3px solid $primary-color;
+    }
+}
+.content-box:nth-child(2) {
+    color: $primary-color;
+    .rect {
+        border-color: $black-color;
+    }
+}

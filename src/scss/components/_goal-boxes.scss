@@ -1,0 +1,72 @@
+.goal-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    transform: translateX(10%);
+    .content-box:nth-child(1) {
+        font-size: 6 * $size;
+        margin-bottom: 20 * $size;
+    }
+    .content-box:nth-child(2) {
+        margin-left: auto;
+        font-size: 4 * $size;
+        width: 900px;
+        &::after,
+        &::before {
+            content: '"';
+            position: absolute;
+            color: $text-color;
+            font-size: 12 * $size;
+        }
+        &::after {
+            right: 0;
+        }
+        &::before {
+            top: -(5 * $size);
+            left: -(10 * $size);
+        }
+    }
+
+    @include responsive(1600px) {
+        $size: $size-md;
+        .content-box:nth-child(1) {
+            font-size: 6 * $size;
+            margin-bottom: 20 * $size;
+        }
+        .content-box:nth-child(2) {
+            font-size: 4 * $size;
+            width: 700px;
+        }
+    }
+}
+@include responsive() {
+    .goal-boxes {
+        height: auto;
+        transform: unset;
+        .content-box {
+            .rect {
+                height: 150%;
+                width: 80%;
+            }
+        }
+        .content-box:nth-child(1) {
+            width: 110%;
+            margin-top: 10vh;
+            font-size: 3 * $size;
+        }
+        .content-box:nth-child(2) {
+            transform: translateX(10%);
+            width: 100%;
+            font-size: 2.5 * $size;
+            &::after,
+            &::before {
+                font-size: 6 * $size;
+            }
+            &::before {
+                top: -(2 * $size);
+                left: -(3 * $size);
+            }
+        }
+    }
+}

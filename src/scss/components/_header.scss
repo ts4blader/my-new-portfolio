@@ -1,0 +1,59 @@
+.header {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 6 * $size;
+    z-index: 5;
+    &__menu {
+        display: none;
+    }
+    &__logo {
+        .button {
+            img {
+                display: none;
+            }
+            @include flex(center, row);
+            font-weight: bold;
+            font-size: 2.5 * $size;
+            text-decoration: 3px underline;
+            color: white;
+        }
+    }
+    .container {
+        @include flex(space-between, row);
+    }
+    &__community {
+        @include flex(center, row);
+        .button {
+            margin: 0 3 * $size;
+        }
+    }
+}
+@include responsive(1600px) {
+    .header {
+        $size: $size-md;
+        top: 6 * $size;
+        &__community {
+            .button {
+                margin: 0 3 * $size;
+            }
+        }
+    }
+}
+@include responsive($break-point) {
+    .header {
+        background: $primary-color;
+        top: 0;
+        &__menu {
+            display: block;
+            cursor: pointer;
+            img {
+                width: 30px;
+                margin-right: 2 * $size;
+            }
+        }
+        &__community {
+            display: none;
+        }
+    }
+}

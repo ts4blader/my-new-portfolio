@@ -1,0 +1,26 @@
+// colors
+$primary-color: #00b894;
+$bg-color: rgb(255, 255, 255);
+$text-color: #004134;
+$black-color: #373737;
+$white-color: white;
+
+// ====== Break Point ============
+$break-point: 992px;
+
+// ====== Size ============
+
+$size: 1rem;
+$size-md: 0.7rem;
+
+// ====== Layer ============
+$wood-layer: 1;
+$stone-layer: 2;
+$iron-layer: 3;
+$gold-layer: 4;
+$diamond-layer: 5;
+$obsidian-layer: 6;
+$bedrock-layer: 7;
+
+// ====== timing function =======
+$ease: cubic-bezier(0.445, 0.05, 0.55, 0.95);

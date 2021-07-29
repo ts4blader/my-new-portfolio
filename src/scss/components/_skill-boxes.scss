@@ -1,0 +1,83 @@
+.skill-boxes {
+    @include flex(space-around, row);
+    height: 100%;
+    transform: translateX(8%);
+    &__item {
+        .content-box {
+            .rect {
+                width: 90%;
+                height: 150%;
+            }
+            h4 {
+                color: $text-color;
+                font-size: 6 * $size;
+                margin-bottom: 1 * $size;
+            }
+            ul {
+                list-style: circle;
+            }
+            li {
+                margin-left: 5 * $size;
+                font-size: 4 * $size;
+                margin-bottom: $size * 0.5;
+            }
+        }
+        img {
+            width: 15 * $size;
+            margin-bottom: 15 * $size;
+        }
+    }
+}
+@include responsive(1600px) {
+    $size: $size-md;
+    .skill-boxes {
+        &__item {
+            .content-box {
+                h4 {
+                    font-size: 6 * $size;
+                    margin-bottom: 1 * $size;
+                }
+                li {
+                    margin-left: 5 * $size;
+                    font-size: 4 * $size;
+                    margin-bottom: $size * 0.5;
+                }
+            }
+            img {
+                width: 15 * $size;
+                margin-bottom: 15 * $size;
+            }
+        }
+    }
+}
+@include responsive() {
+    .skill-boxes {
+        flex-direction: column;
+        height: auto;
+        transform: unset;
+        &__item {
+            &:nth-child(1) {
+                margin-left: 0;
+            }
+            &:nth-child(3) {
+                margin-right: 0;
+            }
+            margin: 4 * $size auto;
+            .content-box {
+                h4 {
+                    font-size: 3 * $size;
+                }
+                li {
+                    font-size: 2 * $size;
+                }
+                .rect {
+                    height: 120%;
+                    left: -(2 * $size);
+                }
+            }
+            img {
+                display: none;
+            }
+        }
+    }
+}
