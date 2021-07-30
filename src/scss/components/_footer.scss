@@ -57,3 +57,14 @@
         }
     }
 }
+@include responsive(400px) {
+    .footer {
+        bottom: 2 * $size;
+        &__social {
+            .social-link {
+                width: 2 * $size;
+                margin: 0 0.5 * $size;
+            }
+        }
+    }
+}

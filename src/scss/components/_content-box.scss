@@ -8,12 +8,12 @@
         left: -(4 * $size);
         width: 60%;
         height: 200%;
-        border: 3px solid $primary-color;
+        border: 3px solid rgba($color: $primary-color, $alpha: 0.5);
     }
 }
 .content-box:nth-child(2) {
     color: $primary-color;
     .rect {
-        border-color: $black-color;
+        border-color: rgba($color: $black-color, $alpha: 0.75);
     }
 }

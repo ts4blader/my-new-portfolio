@@ -3,6 +3,7 @@
 }
 .slide {
     text-align: center;
+    width: 100%;
     &__preview {
         margin-bottom: 5 * $size;
         a {
@@ -63,8 +64,9 @@
         }
     }
 }
-@include responsive() {
+@include responsive($break-point) {
     .slide {
+        width: 100%;
         &__preview {
             a {
                 width: 100%;
