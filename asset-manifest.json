@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-new-portfolio/static/css/main.45b8b488.chunk.css",
+    "main.css": "/my-new-portfolio/static/css/main.2425a712.chunk.css",
     "main.js": "/my-new-portfolio/static/js/main.a3a8616c.chunk.js",
     "main.js.map": "/my-new-portfolio/static/js/main.a3a8616c.chunk.js.map",
     "runtime-main.js": "/my-new-portfolio/static/js/runtime-main.05f6dbd9.js",
@@ -12,7 +12,7 @@
     "static/js/3.7cda74db.chunk.js.map": "/my-new-portfolio/static/js/3.7cda74db.chunk.js.map",
     "index.html": "/my-new-portfolio/index.html",
     "static/css/2.0fb944cf.chunk.css.map": "/my-new-portfolio/static/css/2.0fb944cf.chunk.css.map",
-    "static/css/main.45b8b488.chunk.css.map": "/my-new-portfolio/static/css/main.45b8b488.chunk.css.map",
+    "static/css/main.2425a712.chunk.css.map": "/my-new-portfolio/static/css/main.2425a712.chunk.css.map",
     "static/js/2.94b15321.chunk.js.LICENSE.txt": "/my-new-portfolio/static/js/2.94b15321.chunk.js.LICENSE.txt",
     "static/media/animation-collection.png": "/my-new-portfolio/static/media/animation-collection.302fd1e0.png",
     "static/media/create-color-palette.png": "/my-new-portfolio/static/media/create-color-palette.a71685dc.png",
@@ -34,7 +34,7 @@
     "static/js/runtime-main.05f6dbd9.js",
     "static/css/2.0fb944cf.chunk.css",
     "static/js/2.94b15321.chunk.js",
-    "static/css/main.45b8b488.chunk.css",
+    "static/css/main.2425a712.chunk.css",
     "static/js/main.a3a8616c.chunk.js"
   ]
 }
