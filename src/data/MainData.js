@@ -36,7 +36,7 @@ export const slidecontent = [
   {
     key: 1,
     name: "visual animation",
-    des: "github/ts4blader/myfirstwebsite",
+    des: "github/ts4blader/my-first-website",
     img: "visual-animation.png",
     link: "https://ts4blader.github.io/MyFirstWebsite/",
   },

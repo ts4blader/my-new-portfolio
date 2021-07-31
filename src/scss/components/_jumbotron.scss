@@ -19,7 +19,7 @@
             font-style: italic;
             font-size: 2.5 * $size;
             &::before {
-                content: '"';
+                content: '-- "';
             }
             &::after {
                 content: '"';
