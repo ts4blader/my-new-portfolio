@@ -20,10 +20,10 @@ function Header() {
           </a>
         </div>
         <div className="header__community">
-          <a href="https://github.com/ts4blader?tab=repositories">
+          <a href="https://github.com/ts4blader">
             <ButtonImg img="github.png" />
           </a>
-          <a href="https://codepen.io/your-work">
+          <a href="https://codepen.io/ts4blader/">
             <ButtonImg img="codepen.png" />
           </a>
         </div>
