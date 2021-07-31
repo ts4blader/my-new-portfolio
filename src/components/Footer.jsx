@@ -15,9 +15,18 @@ function Footer() {
         <p className="footer__actor">Design by Tristin Tran</p>
         <div className="footer__social">
           <p className="text">Contact me</p>
-          <SocialItem link="/" img="facebook.png" />
-          <SocialItem link="/" img="gmail.png" />
-          <SocialItem link="/" img="instagram.png" />
+          <SocialItem
+            link="https://www.facebook.com/minhquoc.tran.9828"
+            img="facebook.png"
+          />
+          <SocialItem
+            link="mailto:ts4blader@gmail.com?subject=Mail from My Portfolio"
+            img="gmail.png"
+          />
+          <SocialItem
+            link="https://www.instagram.com/ts4blader/"
+            img="instagram.png"
+          />
         </div>
       </div>
     </footer>
