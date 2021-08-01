@@ -6,7 +6,7 @@ import Carousel from "../components/Carousel";
 const jumbotron = {
   caption: "Hello, I'm Tristin Tran",
   subcaption: "Front-end Developer",
-  quote: "Nothing is your. Till you get it and make it's your",
+  quote: "Nothing is your. Till you get it and make it your",
   img: "longhairguy.png",
   imgMobile: "longhairguy4x3.png",
 };
